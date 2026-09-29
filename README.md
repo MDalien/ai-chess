@@ -1,27 +1,20 @@
-# Game Instructions
+# AI Chess
 
-* Working on AI gamemode...
+Chess game in Python/Pygame with a custom AI opponent.
 
-- Entry point: main.py
-- Press 't' to change theme (green, brown, blue, gray)
-- Press 'r' to restart the game
+## Features
+- Start menu: Player vs Player, Play as White/Black vs AI, AI vs AI
+- 4 difficulty levels (search depth 1–4)
+- Minimax search with alpha-beta pruning and capture-first move ordering
+- Custom board copying (~7x faster than deepcopy)
+- Checkmate and stalemate detection
 
-# Game Snapshots
+## Run
+pip install pygame
+python src/main.py
 
-## Snapshot 1 - Start (green)
-![snapshot1](snapshots/snapshot1.png)
+In game: R = restart, T = theme, Esc = menu
 
-## Snapshot 2 - Start (brown)
-![snapshot2](snapshots/snapshot2.png)
-
-## Snapshot 3 - Start (blue)
-![snapshot3](snapshots/snapshot3.png)
-
-## Snapshot 4 - Start (gray)
-![snapshot4](snapshots/snapshot4.png)
-
-## Snapshot 5 - Valid Moves
-![snapshot5](snapshots/snapshot5.png)
-
-## Snapshot 6 - Castling
-![snapshot6](snapshots/snapshot6.png)
+## Credits
+Board, pieces, and GUI based on AlejoG10's python-chess-ai-yt tutorial.
+The AI (src/ai.py), menu, game modes, and bug fixes are my own work.
